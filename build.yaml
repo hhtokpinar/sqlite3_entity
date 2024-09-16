@@ -1,0 +1,12 @@
+# Read about `build.yaml` at https://pub.dev/packages/build_config
+targets:
+  $default:
+    builders:
+      sqlite3_entity_gen|property_sqlite3entity:
+        generate_for:
+          - example/lib/model/*.dart
+          - example/lib/model/test/*.dart
+          - example_ns/lib/model/test/*.dart
+      #sqlite3_entity_gen|property_sqlite3entity_forms:
+      #  generate_for:
+      #    - lib/model/*.dart
